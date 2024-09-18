@@ -32,9 +32,9 @@ header {
 h1 {
     font-size: 3.5em;
     font-weight: 700;
-    background: linear-gradient(90deg, #ff6f61, #f9a07b);
-    -webkit-background-clip: text;
-    color: transparent;
+    background: linear-gradient(90deg, #ff6f61, #f9a07b); /* 그라데이션 배경 */
+    background-clip: text; /* 표준 속성 */
+    color: transparent; /* 텍스트 색을 투명하게 설정 */
     margin-top: 15px;
     letter-spacing: 3px;
     animation: scaleUp 1.5s ease-in-out forwards;
