@@ -1,0 +1,184 @@
+/* 기본 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1d1f27, #121212);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* 헤더 스타일 */
+header {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: transparent;
+}
+
+header h1 {
+    font-size: 5vw; /* 화면 너비에 따라 폰트 크기 조정 */
+    color: #e0e0e0;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    color: #b3b3b3;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+/* 카드 컨테이너 */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* 카드 스타일 */
+.card {
+    background: #292d3e;
+    border-radius: 15px;
+    margin: 20px 0;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    align-self: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    border: 1px solid #3a3f51;
+    position: relative;
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: inherit; /* 링크 텍스트 색상 유지 */
+    display: block; /* 카드 전체를 클릭 가능하게 만듦 */
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #f3c623;
+    font-weight: 600;
+}
+
+.card p {
+    color: #d1d1d1;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.icon {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #f3c623;
+    background: rgba(243, 198, 35, 0.1);
+    padding: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* 푸터 스타일 */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1d1f27;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #777777;
+}
+
+/* 반응형 디자인 */
+@media (min-width: 768px) {
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 40px 20px;
+    }
+
+    .card {
+        width: 320px;
+        margin: 20px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+}
+
+
+
+/* 프로젝트 설명 섹션 */
+.project-description {
+    padding: 40px;
+    text-align: center;
+    color: #d1d1d1;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.project-description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* 버튼 스타일 */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    background-color: #f3c623;
+    color: #121212;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer; /* 클릭 가능한 요소임을 명확히 */
+    font-size: 1rem;
+}
+
+/* 버튼 클릭 시 시각적 피드백을 위한 효과 */
+.button:active {
+    background-color: #e0b622;
+    transform: scale(0.98); /* 살짝 눌리는 느낌 */
+}
+
+
+
+/* 정책 및 약관 페이지 스타일 */
+.policy-content, .terms-content {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #d1d1d1;
+    text-align: left;
+}
+
+.policy-content h2, .terms-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #f3c623;
+}
+
+.policy-content p, .terms-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
