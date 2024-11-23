@@ -234,8 +234,10 @@ footer p {
 /* 로고 컨테이너 */
 .logo {
   position: relative;
+  width: min(400px, 90vw); /* 최대 400px, 화면 너비의 90%로 설정 */
+  aspect-ratio: 1 / 1; /* 비율을 1:1로 고정 (정사각형) */
   background: url('falling-star/background-logo.png') no-repeat center center / cover; /* 로고 배경 이미지 */
-  border-radius: 50%;
+  border-radius: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -246,8 +248,8 @@ footer p {
 
 /* 둥둥 떠다니는 이미지 */
 .foreground {
-  width: 100%; /* 떠다니는 이미지 크기 */
-  height: 100%;
+  width: 110%; /* 떠다니는 이미지 크기 */
+  height: 110%;
   object-fit: contain;
   animation: float 3s infinite ease-in-out;
   z-index: 1; /* 떠다니는 이미지가 배경보다 위로 표시 */
@@ -271,6 +273,6 @@ footer p {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-15px);
+    transform: translateY(15px);
   }
 }
