@@ -234,8 +234,6 @@ footer p {
 /* 로고 컨테이너 */
 .logo {
   position: relative;
-  width: 400px; /* 로고 크기 */
-  height: 400px;
   background: url('falling-star/background-logo.png') no-repeat center center / cover; /* 로고 배경 이미지 */
   border-radius: 50%;
   display: flex;
